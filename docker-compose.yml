@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  depthwizard:
+    build: .
+    container_name: depthwizard_sih26175
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
